@@ -1,4 +1,10 @@
-fhand = open('romeo-full.txt')
+fname = input('Enter name of the file: ')
+try:
+    fhand = open(fname)
+except:
+    print('File not found!!!')
+    exit()
+#fhand = open('romeo-full.txt')
 
 counts = dict()
 for line in fhand:
